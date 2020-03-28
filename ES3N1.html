@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="citys">
+        <dl>广东</dl>
+        <dd>广州</dd>
+        <dd>深圳</dd>
+        <dl>湖南</dl>
+        <dd>长沙</dd>
+        <dd>衡阳</dd>
+    </div>
+    <script>
+    document.getElementById("citys").onclick = 
+    function ({target: {tagName, style } }) {
+        if(tagName=="DL"){
+                style.backgroundColor=style.backgroundColor==""?"yellow":"";
+            }else if(tagName=="DD"){
+                style.color=style.color==""?"blue":"";
+            }
+    }
+    </script>
+</body>
+</html>
